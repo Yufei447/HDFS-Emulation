@@ -44,13 +44,21 @@ Command supported:
 -rm <file name with path>
 Sample command:
 python3 client.py -mkdir /dir1
+
 python3 client.py -mkdir /dir2
+
 python3 client.py -rmdir /dir2
-python3 client.py -put /Users/xinyizhang/Desktop/DSCI551/project/present_files/pre1.json /dir1
+
+python3 client.py -put /pre1.json /dir1
+
 python3 client.py -ls /
+
 python3 client.py -ls /dir1
+
 python3 client.py -cat /dir1/pre1.json
-python3 client.py -get dir1/pre1.json /Users/xinyizhang/Desktop/pre1.json
+
+python3 client.py -get dir1/pre1.json /pre1.json
+
 python3 client.py -rm /dir1/pre1.json
 
 If you'd like to run your own file system, please mofify the url under edfs.py to your own Firebase url.
